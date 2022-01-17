@@ -1,5 +1,5 @@
 # VulkanInAssemblyWHYYYYY
-Please tell me why I'm doing this
+Please tell me why I am doing this
 
 For some very dumb reason I decided to try out drawing a triangle with vulkan only using assembly.  
 Please just tell me, why did I even start this??
