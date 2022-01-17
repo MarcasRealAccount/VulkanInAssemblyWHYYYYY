@@ -1,0 +1,20 @@
+%ifndef WINDOWS_AMD64_VULKANCALLS_ASMINC
+%define WINDOWS_AMD64_VULKANCALLS_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+extern vkCreateInstance  ; rcx => pCreateInfo, rdx => pAllocator, r8 => pInstance
+extern vkDestroyInstance ; rcx => instance, rdx => pAllocator
+extern vkGetInstanceProcAddr
+
+%if BUILD_IS_CONFIG_DEBUG
+extern vkCreateDebugUtilsMessengerEXT ; rcx => instance, rdx => pCreateInfo, r8 => pAllocator, r9 => pMessenger
+extern vkDestroyDebugUtilsMessengerEXT ; rcx => instance, rdx => messenger, r8 => pAllocator
+%endif
+
+extern vkCreateInstanceTest
+
+%endif
+
+%endif

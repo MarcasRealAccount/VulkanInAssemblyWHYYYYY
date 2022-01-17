@@ -1,0 +1,17 @@
+%ifndef WINDOWS_AMD64_LIBC_ASMINC
+%define WINDOWS_AMD64_LIBC_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+extern printf    ; rcx => format, ...
+extern vsnprintf ; rcx => buf, rdx => size, r8 => format, r9 => va_list
+extern malloc    ; rcx => size
+extern free      ; rcx => ptr
+
+extern __p___argc
+extern __p___argv
+
+%endif
+
+%endif

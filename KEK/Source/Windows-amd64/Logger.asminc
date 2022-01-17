@@ -1,0 +1,23 @@
+%ifndef WINDOWS_AMD64_LOGGER_ASMINC
+%define WINDOWS_AMD64_LOGGER_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+struc Logger
+	.name: resq 1 ; const char*
+endstruc
+
+extern LoggerAlloc
+extern LoggerFree     ; rcx => logger
+extern LoggerCtor     ; rcx => logger, rdx => name
+extern LoggerDtor     ; rcx => logger
+extern LoggerLog      ; rcx => logger, edx => level, r8 => format, r9 => va_list
+extern LoggerLogInfo  ; rcx => logger, rdx => format, ...
+extern LoggerLogDebug ; rcx => logger, rdx => format, ...
+extern LoggerLogWarn  ; rcx => logger, rdx => format, ...
+extern LoggerLogError ; rcx => logger, rdx => format, ...
+
+%endif
+
+%endif

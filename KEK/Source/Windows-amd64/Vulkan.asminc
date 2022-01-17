@@ -1,0 +1,44 @@
+%ifndef WINDOWS_AMD64_VULKAN_ASMINC
+%define WINDOWS_AMD64_VULKAN_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+%include "Windows-amd64/Window.asminc"
+%include "Windows-amd64/VulkanCalls.asminc"
+%include "Windows-amd64/VulkanStructs.asminc"
+
+struc Vulkan
+	.window:                     resd Window_size                   ; Window
+	.applicationName:            resq 1                             ; const char*
+	.engineName:                 resq 1                             ; const char*
+	.applicationVersion:         resd 1                             ; uint32_t
+	.engineVersion:              resd 1                             ; uint32_t
+	.apiVersion:                 resd 2                             ; uint32_t
+	.instance:                   resq 1                             ; VkInstance
+%if BUILD_IS_CONFIG_DEBUG
+	.debugMessenger:             resq 1                             ; VkDebugMessengerKHR
+%endif
+	.surface:                    resq 1                             ; VkSurfaceKHR
+	.physicalDevice:             resq 1                             ; VkPhysicalDevice
+	.physicalDeviceCapabilities: resb VkSurfaceCapabilitiesKHR_size ; VkSurfaceCapabilitiesKHR
+	.device:                     resq 1                             ; VkDevice
+	.graphicsPresentQueue:       resq 1                             ; VkQueue
+	.graphicsPresentQueueIndex:  resd 1                             ; uint32_t
+	.swapchainFormat:            resd 1                             ; VkFormat
+	.swapchainPresentMode:       resd 2                             ; VkPresentModeKHR
+	.swapchain:                  resq 1                             ; VkSwapchainKHR
+	.swapchainImageCount:        resd 2                             ; uint32_t
+	.swapchainImages:            resq 1                             ; VkImage*
+	.swapchainImageViews:        resq 1                             ; VkImageView*
+endstruc
+
+extern VulkanAlloc
+extern VulkanFree   ; rcx => Vulkan
+extern VulkanCtor   ; rcx => Vulkan, edx => width, r8d => height, r9 => title, rsp + 20h => applicationName, rsp + 28h => engineName, rsp + 30h => applicationVersion, rsp + 38h => engineVersion
+extern VulkanDtor   ; rcx => Vulkan
+extern VulkanInit   ; rcx => Vulkan
+extern VulkanDeinit ; rcx => Vulkan
+
+%endif
+
+%endif

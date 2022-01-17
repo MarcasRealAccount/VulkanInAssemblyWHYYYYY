@@ -1,0 +1,30 @@
+# Output
+/Bin/
+
+# Visual Studio
+/.vs/
+*.sln
+*.vcxproj
+*.vcxproj.*
+
+# CLion
+/.idea/
+
+# CMake
+CMakeLists.txt
+*.cmake
+
+# Makefile
+Makefile
+*.Make
+*.mak
+
+# XCode
+*.xcworkspace
+*.xcodeproj/
+
+# Macos
+*.DS_Store
+
+# Premake
+premake5.exe

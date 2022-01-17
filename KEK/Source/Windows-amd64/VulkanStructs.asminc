@@ -1,0 +1,159 @@
+%ifndef WINDOWS_AMD64_VULKANSTRUCTS_ASMINC
+%define WINDOWS_AMD64_VULKANSTRUCTS_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+struc VkExtent2D
+	.width:  resd 1 ; 00-04 uint32_t
+	.height: resd 1 ; 04-08 uint32_t
+endstruc
+struc VkExtent3D
+	.width:  resd 1 ; 00-04 uint32_t
+	.height: resd 1 ; 04-08 uint32_t
+	.depth:  resd 1 ; 08-0C uint32_t
+endstruc
+
+struc VkApplicationInfo
+	.sType: resd 2              ; 00-08 VkStructureType
+	.pNext: resq 1              ; 08-10 const void*
+	.pApplicationName: resq 1   ; 10-18 const char*
+	.applicationVersion: resd 2 ; 18-20 uint32_t
+	.pEngineName: resq 1        ; 20-28 const char*
+	.engineVersion: resd 2      ; 28-30 uint32_t
+	.apiVersion: resd 2         ; 30-38 uint32_t
+endstruc
+struc VkInstanceCreateInfo
+	.sType:                   resd 2 ; 00-08 VkStructureType
+	.pNext:                   resq 1 ; 08-10 const void*
+	.flags:                   resd 2 ; 10-18 VkInstanceCreateFlags
+	.pApplicationInfo:        resq 1 ; 18-20 const VkApplicationInfo*
+	.enabledLayerCount:       resd 2 ; 20-08 uint32_t
+	.ppEnabledLayerNames:     resq 1 ; 28-30 const char* const*
+	.enabledExtensionCount:   resd 2 ; 30-38 uint32_t
+	.ppEnabledExtensionNames: resq 1 ; 38-40 const char* const*
+endstruc
+struc VkDeviceCreateInfo
+	.sType:                   resd 2; 00-08 VkStructureType
+	.pNext:                   resq 1; 08-10 const void*
+	.flags:                   resd 1; 10-14 VkDeviceCreateFlags
+	.queueCreateInfoCount:    resd 1; 14-18 uint32_t
+	.pQueueCreateInfos:       resq 1; 18-20 const VkDeviceQueueCreateInfo*
+	.enabledLayerCount:       resd 2; 20-28 uint32_t
+	.ppEnabledLayerNames:     resq 1; 28-30 const char* const*
+	.enabledExtensionCount:   resd 2; 30-38 uint32_t
+	.ppEnabledExtensionNames: resq 1; 38-40 const char* const*
+	.pEnabledFeatures:        resq 1; 40-48 const VkPhysicalDeviceFeatures*
+endstruc
+struc VkPhysicalDeviceProperties
+	.apiVersion:        resd 1	 ; 000-004 uint32_t
+	.driverVersion:     resd 1	 ; 004-008 uint32_t
+	.vendorID:          resd 1	 ; 008-00C uint32_t
+	.deviceID:          resd 1	 ; 00C-010 uint32_t
+	.deviceType:        resd 1	 ; 010-014 VkPhysicalDeviceType
+	.deviceName:        resb 256 ; 014-114 char[VK_MAX_PHYSICAL_DEVICE_NAME_SIZE]
+	.pipelineCacheUUID: resb 20	 ; 114-128 uint8_t[VK_UUID_SIZE]
+	.limits:            resb 508 ; 128-324 VkPhysicalDeviceLimits
+	.sparseProperties:  resb 20	 ; 324-338 VkPhysicalDeviceSparseproperties
+endstruc
+struc VkSurfaceCapabilitiesKHR
+	.minImageCount:           resd 1			   ; 00-04 uint32_t
+	.maxImageCount:           resd 1			   ; 04-08 uint32_t
+	.currentExtent:           resb VkExtent2D_size ; 08-10 VkExtent2D
+	.minImageExtent:          resb VkExtent2D_size ; 10-18 VkExtent2D
+	.maxImageExtent:          resb VkExtent2D_size ; 18-20 VkExtent2D
+	.maxImageArrayLayers:     resd 1			   ; 20-24 uint32_t
+	.supportedTransforms:     resd 1			   ; 24-28 VkSurfaceTransformFlagsKHR
+	.currentTransform:        resd 1			   ; 28-2C VkSurfaceTransformFlagBitsKHR
+	.supportedCompositeAlpha: resd 1			   ; 2C-30 VkCompositeAlphaFlagsKHR
+	.supportedUsageFlags:     resd 1			   ; 30-34 VkImageUsageFlags
+endstruc
+struc VkSurfaceFormatKHR
+	.format:     resd 1 ; 00-04 VkFormat
+	.colorSpace: resd 1 ; 04-08 VkColorSpaceKHR
+endstruc
+struc VkDeviceQueueCreateInfo
+	.sType:            resd 2 ; 00-08 VkStructureType
+	.pNext:            resq 1 ; 08-10 const void*
+	.flags:            resd 1 ; 10-14 VkDeviceQueueCreateFlags
+	.queueFamilyIndex: resd 1 ; 14-18 uint32_t
+	.queueCount:       resd 2 ; 18-20 uint32_t
+	.pQueuePriorities: resq 1 ; 20-28 const float*
+endstruc
+struc VkQueueFamilyProperties
+	.queueFlags:                  resd 1               ; 00-04 VkQueueFlags
+	.queueCount:                  resd 1               ; 04-08 uint32_t
+	.timestampValidBits:          resd 1               ; 08-0C uint32_t
+	.minImageTransferGranularity: resb VkExtent3D_size ; 0C-18 VkExtent3D
+endstruc
+struc VkSwapchainCreateInfoKHR
+	.sType:                 resd 2               ; 00-08 VkStructureType
+	.pNext:                 resq 1               ; 08-10 const void*
+	.flags:                 resd 2               ; 10-18 VkSwapchainCreateFlagsKHR
+	.surface:               resq 1               ; 18-20 VkSurfaceKHR
+	.minImageCount:         resd 1               ; 20-24 uint32_t
+	.imageFormat:           resd 1               ; 24-28 VkFormat
+	.imageColorSpace:       resd 1               ; 28-2C VkColorSpaceKHR
+	.imageExtent:           resb VkExtent2D_size ; 2C-34 VkExtent2D
+	.imageArrayLayers:      resd 1               ; 34-38 uint32_t
+	.imageUsage:            resd 1               ; 38-3C VkImageUsageFlags
+	.imageSharingMode:      resd 1               ; 3C-40 VkSharingMode
+	.queueFamilyIndexCount: resd 2               ; 40-44 uint32_t
+	.pQueueFamilyIndices:   resq 1               ; 48-50 const uint32_t*
+	.preTransform:          resd 1               ; 50-54 VkSurfaceTransformFlagBitsKHR
+	.compositeAlpha:        resd 1               ; 54-58 VkCompositeAlphaFlagBitsKHR
+	.presentMode:           resd 1               ; 58-5C VkPresentModeKHR
+	.clipped:               resd 1               ; 5C-60 VkBool32
+	.oldSwapchain:          resq 1               ; 60-68 VkSwapchainKHR
+endstruc
+struc VkComponentMapping
+	.r: resd 1 ; 00-04 VkComponentSwizzle
+	.g: resd 1 ; 04-08 VkComponentSwizzle
+	.b: resd 1 ; 08-0C VkComponentSwizzle
+	.a: resd 1 ; 0C-10 VkComponentSwizzle
+endstruc
+struc VkImageSubresourceRange
+	.aspectMask:     resd 1 ; 00-04 VkImageAspectFlags
+	.baseMipLevel:   resd 1 ; 04-08 uint32_t
+	.levelCount:     resd 1 ; 08-0C uint32_t
+	.baseArrayLayer: resd 1 ; 0C-10 uint32_t
+	.layerCount:     resd 1 ; 10-14 uint32_t
+endstruc
+struc VkImageViewCreateInfo
+	.sType:            resd 2                            ; 00-08 VkStructureType									   
+	.pNext:            resq 1                            ; 08-10 const void*
+	.flags:            resd 2                            ; 10-18 VkImageViewCreateFlags					           
+	.image:            resq 1                            ; 18-20 VkImage
+	.viewType:         resd 1                            ; 20-24 VkImageViewType									   
+	.format:           resd 1                            ; 24-28 VkFormat
+	.components:       resb VkComponentMapping_size      ; 28-38 VkComponentMapping
+	.subresourceRange: resb VkImageSubresourceRange_size ; 38-4C VkImageSubresourceRange
+	                   resb 4                            ; 4C-50 padding
+endstruc
+struc VkDebugUtilsMessengerCallbackDataEXT
+	.sType:            resd 2 ; 00-08 VkStructureType
+	.pNext:            resq 1 ; 08-10 const void*
+	.flags:            resd 2 ; 10-18 VkDebugUtilsMessengerCallbackDataFlagsEXT
+	.pMessageIdName:   resq 1 ; 18-20 const char*
+	.messageIdNumber:  resd 2 ; 20-28 int32_t
+	.pMessage:         resq 1 ; 28-30 const char*
+	.queueLabelCount:  resd 2 ; 30-38 uint32_t
+	.pQueueLabels:     resq 1 ; 38-40 const VkDebugUtilsLabelEXT*
+	.cmdBufLabelCount: resd 2 ; 40-48 uint32_t
+	.pCmdBufLabels:    resq 1 ; 48-50 const VkDebugUtilsLabelEXT*
+	.objectCount:      resd 2 ; 50-58 uint32_t
+	.pObjects:         resq 1 ; 58-60 const VkDebugUtilsObjectNameInfoEXT*
+endstruc
+struc VkDebugUtilsMessengerCreateInfoEXT
+	.sType:           resd 2 ; 00-08 VkStructureType
+	.pNext:           resq 1 ; 08-10 const void*
+	.flags:           resd 1 ; 10-14 VkDebugUtilsMessengerCreateFlagsEXT
+	.messageSeverity: resd 1 ; 14-18 VkDebugUtilsMessageSeverityFlagsEXT
+	.messageType:     resd 2 ; 18-20 VkDebugUtilsMessageTypeFlagsEXT
+	.pfnUserCallback: resq 1 ; 20-28 PFN_vkDebugUtilsMessengerCallbackEXT
+	.pUserData:       resq 1 ; 28-30 void*
+endstruc
+
+%endif
+
+%endif

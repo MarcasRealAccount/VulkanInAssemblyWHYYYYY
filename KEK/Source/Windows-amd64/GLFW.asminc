@@ -1,0 +1,20 @@
+%ifndef WINDOWS_AMD64_GLFW_ASMINC
+%define WINDOWS_AMD64_GLFW_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+extern glfwSetErrorCallback  ; rcx => callback
+extern glfwInit
+extern glfwTerminate
+extern glfwDefaultWindowHints
+extern glfwWindowHint        ; ecx => hint, edx => value
+extern glfwCreateWindow      ; ecx => width, edx => height, r8 => title
+extern glfwDestroyWindow     ; rcx => windowPtr
+extern glfwWindowShouldClose ; rcx => windowPtr
+extern glfwGetRequiredInstanceExtensions
+extern glfwPollEvents
+
+%endif
+
+%endif

@@ -1,0 +1,511 @@
+UNASSIGNED-ObjectTracker-ObjectLeak(ERROR / SPEC): msgNum: 699204130 - Validation Error: [ UNASSIGNED-ObjectTracker-ObjectLeak ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; | MessageID = 0x29ad0222 | OBJ ERROR : VK_DEBUG_REPORT_OBJECT_TYPE_DEVICE_EXT object VkDevice 0x205c1aed6e0[] has not been destroyed.
+    Objects: 1
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23f27d0, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23f27d0[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23f27d0, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23fc520, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23fc520[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23fc520, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c4af19d0, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c4af19d0[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c4af19d0, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23fa610, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23fa610[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23fa610, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23ec810, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23ec810[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23ec810, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23fe840, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23fe840[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23fe840, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23f01a0, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23f01a0[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23f01a0, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c23f66f0, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c23f66f0[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c23f66f0, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c2400750, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c2400750[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c2400750, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c4affcb0, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c4affcb0[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c4affcb0, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x205c4b26050, type = VK_OBJECT_TYPE_COMMAND_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandBuffer 0x205c4b26050[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x205c4b26050, type: 6, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x73a850000000004d, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x73a850000000004d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x73a850000000004d, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x130160000000005c, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x130160000000005c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x130160000000005c, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5dbcf90000000065, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x5dbcf90000000065[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5dbcf90000000065, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x7ddd740000000051, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x7ddd740000000051[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x7ddd740000000051, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x74ea280000000054, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x74ea280000000054[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x74ea280000000054, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x9389c50000000061, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x9389c50000000061[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x9389c50000000061, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x96fbe2000000005e, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x96fbe2000000005e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x96fbe2000000005e, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb3ee8b0000000070, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0xb3ee8b0000000070[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb3ee8b0000000070, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x1d4e2e0000000062, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x1d4e2e0000000062[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x1d4e2e0000000062, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x7f79ad0000000050, type = VK_OBJECT_TYPE_BUFFER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkBuffer 0x7f79ad0000000050[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x7f79ad0000000050, type: 9, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xee24d0000000059, type = VK_OBJECT_TYPE_IMAGE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImage 0xee24d0000000059[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xee24d0000000059, type: 10, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x8f1c31000000006d, type = VK_OBJECT_TYPE_IMAGE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImage 0x8f1c31000000006d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x8f1c31000000006d, type: 10, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2c71f0000000006c, type = VK_OBJECT_TYPE_IMAGE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImage 0x2c71f0000000006c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2c71f0000000006c, type: 10, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xec4bec000000000b, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xec4bec000000000b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xec4bec000000000b, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xead9370000000008, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xead9370000000008[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xead9370000000008, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xe7f79a0000000005, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xe7f79a0000000005[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xe7f79a0000000005, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xf443490000000006, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xf443490000000006[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xf443490000000006, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x967dd1000000000e, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0x967dd1000000000e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x967dd1000000000e, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xe7e6d0000000000f, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xe7e6d0000000000f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xe7e6d0000000000f, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xe88693000000000c, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xe88693000000000c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xe88693000000000c, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xee647e0000000009, type = VK_OBJECT_TYPE_SEMAPHORE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSemaphore 0xee647e0000000009[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xee647e0000000009, type: 5, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcb3ee80000000007, type = VK_OBJECT_TYPE_FENCE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkFence 0xcb3ee80000000007[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcb3ee80000000007, type: 7, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xd5b26f0000000010, type = VK_OBJECT_TYPE_FENCE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkFence 0xd5b26f0000000010[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xd5b26f0000000010, type: 7, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcad092000000000d, type = VK_OBJECT_TYPE_FENCE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkFence 0xcad092000000000d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcad092000000000d, type: 7, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcfef35000000000a, type = VK_OBJECT_TYPE_FENCE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkFence 0xcfef35000000000a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcfef35000000000a, type: 7, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x9f58380000000064, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x9f58380000000064[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x9f58380000000064, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x44349c0000000060, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x44349c0000000060[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x44349c0000000060, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2d93ac000000006f, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x2d93ac000000006f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2d93ac000000006f, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x6dcc3f000000005b, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x6dcc3f000000005b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x6dcc3f000000005b, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x7cd292000000004f, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x7cd292000000004f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x7cd292000000004f, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2a7f70000000053, type = VK_OBJECT_TYPE_DEVICE_MEMORY; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDeviceMemory 0x2a7f70000000053[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2a7f70000000053, type: 8, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x44695a0000000071, type = VK_OBJECT_TYPE_IMAGE_VIEW; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImageView 0x44695a0000000071[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x44695a0000000071, type: 14, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2894590000000072, type = VK_OBJECT_TYPE_IMAGE_VIEW; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImageView 0x2894590000000072[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2894590000000072, type: 14, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x4256c1000000005d, type = VK_OBJECT_TYPE_IMAGE_VIEW; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkImageView 0x4256c1000000005d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x4256c1000000005d, type: 14, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x27d60e0000000019, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x27d60e0000000019[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x27d60e0000000019, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x3a6cbb0000000025, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x3a6cbb0000000025[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x3a6cbb0000000025, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x4295ab0000000035, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x4295ab0000000035[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x4295ab0000000035, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x4fac1c0000000032, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x4fac1c0000000032[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x4fac1c0000000032, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x59ffe0000000003d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x59ffe0000000003d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x59ffe0000000003d, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcfcda0000000001e, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xcfcda0000000001e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcfcda0000000001e, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5eb05e000000003b, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x5eb05e000000003b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5eb05e000000003b, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x9f9b41000000003c, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x9f9b41000000003c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x9f9b41000000003c, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xc4f3070000000021, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xc4f3070000000021[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xc4f3070000000021, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2e2941000000001f, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x2e2941000000001f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2e2941000000001f, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xd897d90000000016, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xd897d90000000016[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xd897d90000000016, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb991fa0000000024, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xb991fa0000000024[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb991fa0000000024, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb9181f0000000029, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xb9181f0000000029[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb9181f0000000029, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xdd3a8a0000000015, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xdd3a8a0000000015[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xdd3a8a0000000015, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xab64de0000000020, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xab64de0000000020[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xab64de0000000020, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xd10d270000000018, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xd10d270000000018[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xd10d270000000018, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xd175b40000000013, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xd175b40000000013[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xd175b40000000013, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x59f7450000000038, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x59f7450000000038[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x59f7450000000038, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x9638f80000000036, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x9638f80000000036[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x9638f80000000036, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5c5283000000003e, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x5c5283000000003e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5c5283000000003e, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x95a125000000001a, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x95a125000000001a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x95a125000000001a, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xea7170000000031, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xea7170000000031[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xea7170000000031, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x9fde6b0000000014, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x9fde6b0000000014[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x9fde6b0000000014, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb12fb2000000002c, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xb12fb2000000002c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb12fb2000000002c, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x89e60f0000000042, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x89e60f0000000042[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x89e60f0000000042, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x808562000000003f, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x808562000000003f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x808562000000003f, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa7c5450000000023, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xa7c5450000000023[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa7c5450000000023, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2723ba0000000037, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x2723ba0000000037[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2723ba0000000037, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x980b0000000002e, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x980b0000000002e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x980b0000000002e, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa43473000000002d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xa43473000000002d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa43473000000002d, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xdcc8fd0000000012, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xdcc8fd0000000012[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xdcc8fd0000000012, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa808d50000000033, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xa808d50000000033[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa808d50000000033, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xba7514000000002a, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xba7514000000002a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xba7514000000002a, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x944a2c0000000039, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x944a2c0000000039[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x944a2c0000000039, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa21a4e0000000030, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xa21a4e0000000030[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa21a4e0000000030, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcb1c7c000000001b, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xcb1c7c000000001b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcb1c7c000000001b, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x56c9bd0000000040, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x56c9bd0000000040[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x56c9bd0000000040, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2cfba2000000001c, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x2cfba2000000001c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2cfba2000000001c, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa2eb680000000026, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xa2eb680000000026[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa2eb680000000026, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x84c0580000000017, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x84c0580000000017[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x84c0580000000017, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2e2cd000000002b, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x2e2cd000000002b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2e2cd000000002b, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x301e6c0000000022, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x301e6c0000000022[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x301e6c0000000022, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x4b7df1000000002f, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x4b7df1000000002f[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x4b7df1000000002f, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x210d07000000003a, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x210d07000000003a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x210d07000000003a, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x2b424a0000000034, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x2b424a0000000034[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x2b424a0000000034, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x908683000000001d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x908683000000001d[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x908683000000001d, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x980f360000000011, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x980f360000000011[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x980f360000000011, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x3fbcd60000000028, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x3fbcd60000000028[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x3fbcd60000000028, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x6612e40000000041, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0x6612e40000000041[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x6612e40000000041, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb097c90000000027, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkShaderModule 0xb097c90000000027[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb097c90000000027, type: 15, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x535b660000000043, type = VK_OBJECT_TYPE_PIPELINE_CACHE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipelineCache 0x535b660000000043[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x535b660000000043, type: 16, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x67022e000000004b, type = VK_OBJECT_TYPE_PIPELINE_LAYOUT; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipelineLayout 0x67022e000000004b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x67022e000000004b, type: 17, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x564fdd0000000069, type = VK_OBJECT_TYPE_PIPELINE_LAYOUT; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipelineLayout 0x564fdd0000000069[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x564fdd0000000069, type: 17, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x852b56000000006a, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x852b56000000006a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x852b56000000006a, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x10ac5000000007e, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x10ac5000000007e[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x10ac5000000007e, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xad937b0000000080, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0xad937b0000000080[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xad937b0000000080, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x6871490000000055, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x6871490000000055[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x6871490000000055, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5c59a0000000056, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x5c59a0000000056[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5c59a0000000056, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb8a507000000007c, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0xb8a507000000007c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb8a507000000007c, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x73b89b0000000057, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x73b89b0000000057[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x73b89b0000000057, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x53e60f000000006b, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x53e60f000000006b[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x53e60f000000006b, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xcc25c90000000082, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0xcc25c90000000082[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xcc25c90000000082, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x13cc1f0000000084, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x13cc1f0000000084[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x13cc1f0000000084, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x625f640000000058, type = VK_OBJECT_TYPE_PIPELINE; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkPipeline 0x625f640000000058[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x625f640000000058, type: 19, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x74d977000000004a, type = VK_OBJECT_TYPE_DESCRIPTOR_SET_LAYOUT; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSetLayout 0x74d977000000004a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x74d977000000004a, type: 20, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5684940000000068, type = VK_OBJECT_TYPE_DESCRIPTOR_SET_LAYOUT; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSetLayout 0x5684940000000068[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5684940000000068, type: 20, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x5011aa0000000066, type = VK_OBJECT_TYPE_SAMPLER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSampler 0x5011aa0000000066[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x5011aa0000000066, type: 21, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x603cd90000000044, type = VK_OBJECT_TYPE_SAMPLER; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkSampler 0x603cd90000000044[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x603cd90000000044, type: 21, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb3ffc1000000007a, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0xb3ffc1000000007a[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb3ffc1000000007a, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xbd60bd0000000076, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0xbd60bd0000000076[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xbd60bd0000000076, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xa182620000000079, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0xa182620000000079[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xa182620000000079, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x33f7660000000075, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0x33f7660000000075[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x33f7660000000075, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x3f36830000000078, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0x3f36830000000078[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x3f36830000000078, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x45d6d1000000004c, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0x45d6d1000000004c[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x45d6d1000000004c, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x421a0f0000000074, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0x421a0f0000000074[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x421a0f0000000074, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb82de40000000077, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0xb82de40000000077[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb82de40000000077, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xb6bee80000000073, type = VK_OBJECT_TYPE_DESCRIPTOR_SET; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorSet 0xb6bee80000000073[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xb6bee80000000073, type: 23, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x85798b0000000067, type = VK_OBJECT_TYPE_DESCRIPTOR_POOL; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorPool 0x85798b0000000067[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x85798b0000000067, type: 22, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0x8cc1d80000000045, type = VK_OBJECT_TYPE_DESCRIPTOR_POOL; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkDescriptorPool 0x8cc1d80000000045[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0x8cc1d80000000045, type: 22, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xfa21a40000000003, type = VK_OBJECT_TYPE_COMMAND_POOL; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandPool 0xfa21a40000000003[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xfa21a40000000003, type: 25, name: NULL
+VUID-vkDestroyDevice-device-00378(ERROR / SPEC): msgNum: 1901072314 - Validation Error: [ VUID-vkDestroyDevice-device-00378 ] Object 0: handle = 0x205c1aed6e0, type = VK_OBJECT_TYPE_DEVICE; Object 1: handle = 0xf56c9b0000000004, type = VK_OBJECT_TYPE_COMMAND_POOL; | MessageID = 0x71500fba | OBJ ERROR : For VkDevice 0x205c1aed6e0[], VkCommandPool 0xf56c9b0000000004[] has not been destroyed. The Vulkan spec states: All child objects created on device must have been destroyed prior to destroying device (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyDevice-device-00378)
+    Objects: 2
+        [0] 0x205c1aed6e0, type: 3, name: NULL
+        [1] 0xf56c9b0000000004, type: 25, name: NULL
+VUID-vkDestroyInstance-instance-00629(ERROR / SPEC): msgNum: -1958900200 - Validation Error: [ VUID-vkDestroyInstance-instance-00629 ] Object 0: handle = 0x205be6dfcf0, type = VK_OBJECT_TYPE_INSTANCE; Object 1: handle = 0xfab64d0000000002, type = VK_OBJECT_TYPE_SURFACE_KHR; | MessageID = 0x8b3d8e18 | OBJ ERROR : For VkInstance 0x205be6dfcf0[], VkSurfaceKHR 0xfab64d0000000002[] has not been destroyed. The Vulkan spec states: All child objects created using instance must have been destroyed prior to destroying instance (https://vulkan.lunarg.com/doc/view/1.2.198.1/windows/1.2-extensions/vkspec.html#VUID-vkDestroyInstance-instance-00629)
+    Objects: 2
+        [0] 0x205be6dfcf0, type: 1, name: NULL
+        [1] 0xfab64d0000000002, type: 1000000000, name: NULL

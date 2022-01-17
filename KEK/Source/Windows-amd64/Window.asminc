@@ -1,0 +1,29 @@
+%ifndef WINDOWS_AMD64_WINDOW_ASMINC
+%define WINDOWS_AMD64_WINDOW_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_WINDOWS && BUILD_IS_PLATFORM_AMD64
+
+struc Window
+	.width:     resd 1 ; uint32_t
+	.height:    resd 1 ; uint32_t
+	.title:     resq 1 ; const char*
+	.windowPtr: resq 1 ; GLFWwindow*
+endstruc
+
+extern WindowCount
+
+extern WindowAlloc
+extern WindowFree        ; rcx => window
+extern WindowCtor	     ; rcx => window, edx => width, r8d => height, r9 => title
+extern WindowDtor	     ; rcx => window
+extern WindowCreate      ; rcx => window
+extern WindowDestroy     ; rcx => window
+extern WindowGetNative   ; rcx => window
+extern WindowShouldClose ; rcx => window
+
+extern WindowsUpdate
+
+%endif
+
+%endif
