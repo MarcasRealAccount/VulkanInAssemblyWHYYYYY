@@ -1,4 +1,5 @@
 require("Premake/Module/vstudio/vs2010_vcxproj_ext")
+require("Premake/Module/cmake/cmake_project_ext")
 
 require("Premake/Actions/clean")
 require("Premake/Actions/format-tidy")

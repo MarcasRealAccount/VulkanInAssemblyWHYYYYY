@@ -7,9 +7,9 @@
 section .rdata
 	LoggerFormat:     db 33o, "[38;2;%sm[%s] %s: %s", 33o, "[39m", 10, 0
 	LoggerInfoStr:    db "Info", 0
-	LoggerInfoColor:  db "127;255;255", 0
+	LoggerInfoColor:  db "255;255;255", 0
 	LoggerDebugStr:   db "Debug", 0
-	LoggerDebugColor: db "127;255;63", 0
+	LoggerDebugColor: db "127;255;255", 0
 	LoggerWarnStr:    db "Warn", 0
 	LoggerWarnColor:  db "255;127;0", 0
 	LoggerErrorStr:   db "Error", 0

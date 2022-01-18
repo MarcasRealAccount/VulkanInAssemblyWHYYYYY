@@ -1,0 +1,14 @@
+%ifndef MACOSX_AMD64_LIBC_ASMINC
+%define MACOSX_AMD64_LIBC_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_MACOSX && BUILD_IS_PLATFORM_AMD64
+
+extern _printf    ; rdi => format, ...
+extern _vsnprintf ; rdi => buf, rsi => size, rdx => format, rcx => va_list
+extern _malloc    ; rdi => size
+extern _free      ; rdi => ptr
+
+%endif
+
+%endif

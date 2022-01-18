@@ -48,7 +48,7 @@ section .text
 			lea rdx, [LogArgFormat]
 			mov r8, rbx
 			mov r9, [rsp + 48h + 10h]
-			mov r9, [r9 + 8h * rbx]
+			mov r9, [r9 + rbx * 8h]
 			call LoggerLogDebug
 			
 			inc rbx

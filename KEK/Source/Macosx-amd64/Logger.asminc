@@ -1,0 +1,23 @@
+%ifndef MACOSX_AMD64_LOGGER_ASMINC
+%define MACOSX_AMD64_LOGGER_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_MACOSX && BUILD_IS_PLATFORM_AMD64
+
+struc Logger
+    .name: resq 1 ; const char*
+endstruc
+
+extern _LoggerAlloc
+extern _LoggerFree     ; rdi => logger
+extern _LoggerCtor     ; rdi => logger, rsi => name
+extern _LoggerDtor     ; rdi => logger
+extern _LoggerLog      ; rdi => logger, esi => level, rdx => format, rcx => va_list
+extern _LoggerLogInfo  ; rdi => logger, rsi => format, ...
+extern _LoggerLogDebug ; rdi => logger, rsi => format, ...
+extern _LoggerLogWarn  ; rdi => logger, rsi => format, ...
+extern _LoggerLogError ; rdi => logger, rsi => format, ...
+
+%endif
+
+%endif
