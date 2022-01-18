@@ -72,17 +72,17 @@ section .text
         mov rdi, Logger_size
         jmp _malloc
 
-    GlobalLabel _LoggerFree     ; rdi => logger
+    GlobalLabel _LoggerFree ; rdi => logger
         jmp _free
 
-    GlobalLabel _LoggerCtor     ; rdi => logger, rsi => name
+    GlobalLabel _LoggerCtor ; rdi => logger, rsi => name
         mov [rdi + Logger.name], rsi
         ret
 
-    GlobalLabel _LoggerDtor     ; rdi => logger
+    GlobalLabel _LoggerDtor ; rdi => logger
         ret
 
-    GlobalLabel _LoggerLog      ; rdi => logger, esi => level, rdx => format, rcx => va_list
+    GlobalLabel _LoggerLog ; rdi => logger, esi => level, rdx => format, rcx => va_list
         push rbp
         push rbx
         push r12
@@ -143,7 +143,7 @@ section .text
         pop rbp
         ret
 
-    GlobalLabel _LoggerLogInfo  ; rdi => logger, rsi => format, ...
+    GlobalLabel _LoggerLogInfo ; rdi => logger, rsi => format, ...
         sub rsp, 0D8h
         mov r10, rsi
         mov [rsp + 30h], rdx
@@ -209,7 +209,7 @@ section .text
         add rsp, 0D8h
         ret
 
-    GlobalLabel _LoggerLogWarn  ; rdi => logger, rsi => format, ...
+    GlobalLabel _LoggerLogWarn ; rdi => logger, rsi => format, ...
         sub rsp, 0D8h
         mov r10, rsi
         mov [rsp + 30h], rdx
