@@ -1,4 +1,9 @@
 local p = premake
+
+if not p.extensions or not p.extensions.cmake or not p.extensions.cmake.project then
+    return
+end
+
 local cmake = p.extensions.cmake
 local m = cmake.project
 
