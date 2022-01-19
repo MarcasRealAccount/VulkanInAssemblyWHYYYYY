@@ -1,0 +1,20 @@
+%ifndef MACOSX_AMD64_VULKANCALLS_ASMINC
+%define MACOSX_AMD64_VULKANCALLS_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_MACOSX && BUILD_IS_PLATFORM_AMD64
+
+extern _vkCreateInstance  ; rdi => pCreateInfo, rsi => pAllocator, rdx => pInstance
+extern _vkDestroyInstance ; rdi => instance, rsi => pAllocator
+extern _vkGetInstanceProcAddr
+
+%if BUILD_IS_CONFIG_DEBUG
+extern _vkCreateDebugUtilsMessengerEXT  ; rdi => instance, rsi => pCreateInfo, rdx => pAllocator, rcx => pMessenger
+extern _vkDestroyDebugUtilsMessengerEXT ; rdi => instance, rsi => messenger, rdx => pAllocator
+%endif
+
+extern _vkCreateInstanceTest
+
+%endif
+
+%endif

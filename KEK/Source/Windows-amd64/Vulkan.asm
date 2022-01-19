@@ -42,30 +42,21 @@ section .text
 		cmp rcx, 12
 		jg .Error
 		lea rax, [.jumpTable]
+        lea rcx, [AppLogger]
+        lea rdx, [VulkanValidationFormat]
+        mov r8, [r8 + VkDebugUtilsMessengerCallbackDataEXT.pMessage]
 		jmp [rax + rcx * 8]
 
 		.Verbose:
-			lea rcx, [AppLogger]
-			lea rdx, [VulkanValidationFormat]
-			mov r8, [r8 + VkDebugUtilsMessengerCallbackDataEXT.pMessage]
 			call LoggerLogInfo
 			jmp .exit
 		.Info:
-			lea rcx, [AppLogger]
-			lea rdx, [VulkanValidationFormat]
-			mov r8, [r8 + VkDebugUtilsMessengerCallbackDataEXT.pMessage]
 			call LoggerLogDebug
 			jmp .exit
 		.Warning:
-			lea rcx, [AppLogger]
-			lea rdx, [VulkanValidationFormat]
-			mov r8, [r8 + VkDebugUtilsMessengerCallbackDataEXT.pMessage]
 			call LoggerLogWarn
 			jmp .exit
 		.Error:
-			lea rcx, [AppLogger]
-			lea rdx, [VulkanValidationFormat]
-			mov r8, [r8 + VkDebugUtilsMessengerCallbackDataEXT.pMessage]
 			call LoggerLogError
 			jmp .exit
 
@@ -100,6 +91,7 @@ section .text
 		ret
 
 	StaticLabel VulkanCreateInstance ; rcx => Vulkan
+	    mov [rsp + 8h], rbx
 %if BUILD_IS_CONFIG_DEBUG
 		sub rsp, 48h + VkInstanceCreateInfo_size + VkApplicationInfo_size + VkDebugUtilsMessengerCreateInfoEXT_size + 8h ; 8 byte padding
 %else
@@ -165,8 +157,7 @@ section .text
 		mov dword[rsp + 48h + VkInstanceCreateInfo.flags], 0
 		lea rcx, [rsp + 48h + VkInstanceCreateInfo_size]
 		mov qword[rsp + 48h + VkInstanceCreateInfo.pApplicationInfo], rcx
-		mov ecx, (VulkanInstanceLayerNames.end - VulkanInstanceLayerNames) / 8
-		mov dword[rsp + 48h + VkInstanceCreateInfo.enabledLayerCount], ecx
+		mov dword[rsp + 48h + VkInstanceCreateInfo.enabledLayerCount], (VulkanInstanceLayerNames.end - VulkanInstanceLayerNames) / 8
 		lea rcx, [VulkanInstanceLayerNames]
 		mov qword[rsp + 48h + VkInstanceCreateInfo.ppEnabledLayerNames], rcx
 		mov ecx, [rsp + 28h]
@@ -214,6 +205,7 @@ section .text
 %else
 			add rsp, 48h + VkInstanceCreateInfo_size + VkApplicationInfo_size + 8h ; 8 byte padding
 %endif
+            mob rbx, [rsp + 8h]
 			ret
 
 	GlobalLabel VulkanAlloc
@@ -269,22 +261,21 @@ section .text
 			jmp .exit
 
 	GlobalLabel VulkanDeinit ; rcx => Vulkan
-		mov [rsp + 8h], rcx
-		sub rsp, 28h
+		sub rsp, 8h
+
+		mov rbx, rcx
 		
 %if BUILD_IS_CONFIG_DEBUG
-		mov rax, [rsp + 28h + 8h]
-		mov rcx, [rax + Vulkan.instance]
-		mov rdx, [rax + Vulkan.debugMessenger]
+		mov rcx, [rbx + Vulkan.instance]
+		mov rdx, [rbx + Vulkan.debugMessenger]
 		mov r8, 0
 		call vkDestroyDebugUtilsMessengerEXT
 %endif
 
-		mov rax, [rsp + 28h + 8h]
-		mov rcx, [rax + Vulkan.instance]
+		mov rcx, [rbx + Vulkan.instance]
 		call vkDestroyInstance
 
-		add rsp, 28h
+		add rsp, 8h
 		ret
 		
 %if BUILD_IS_CONFIG_DEBUG
