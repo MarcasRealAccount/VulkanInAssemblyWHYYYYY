@@ -70,7 +70,7 @@ section .text
         mov esi, 0
         call _glfwWindowHint
         mov edi, 20003h
-        mov edx, 1
+        mov esi, 1
         call _glfwWindowHint
 
         mov rax, [rsp]
