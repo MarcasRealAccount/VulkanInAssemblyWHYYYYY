@@ -1,0 +1,29 @@
+%ifndef MACOSX_AMD64_WINDOW_ASMINC
+%define MACOSX_AMD64_WINDOW_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_MACOSX && BUILD_IS_PLATFORM_AMD64
+
+struc Window
+    .width:     resd 1 ; uint32_t
+    .height:    resd 1 ; uint32_t
+    .title:     resq 1 ; const char*
+    .windowPtr: resq 1 ; GLFWwindow*
+endstruc
+
+extern _WindowCount
+
+extern _WindowAlloc
+extern _WindowFree        ; rdi => window
+extern _WindowCtor        ; rdi => window, esi => width, edx => height, rcx => title
+extern _WindowDtor        ; rdi => window
+extern _WindowCreate      ; rdi => window
+extern _WindowDestroy     ; rdi => window
+extern _WindowGetNative   ; rdi => window
+extern _WindowShouldClose ; rdi => window
+
+extern _WindowsUpdate
+
+%endif
+
+%endif

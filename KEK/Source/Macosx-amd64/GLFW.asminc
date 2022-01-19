@@ -1,0 +1,20 @@
+%ifndef MACOSX_AMD64_GLFW_ASMINC
+%define MACOSX_AMD64_GLFW_ASMINC
+
+%include "Common.asminc"
+%if BUILD_IS_SYSTEM_MACOSX && BUILD_IS_PLATFORM_AMD64
+
+extern _glfwSetErrorCallback ; rdi => callback
+extern _glfwInit
+extern _glfwTerminate
+extern _glfwDefaultWindowHints
+extern _glfwWindowHint        ; edi => hint, esi => value
+extern _glfwCreateWindow      ; edi => width, esi => height, rdx => title, rcx => monitor, r8 => share
+extern _glfwDestroyWindow     ; rdi => windowPtr
+extern _glfwWindowShouldClose ; rdi => windowPtr
+extern _glfwGetRequiredInstanceExtensions
+extern _glfwPollEvents
+
+%endif
+
+%endif

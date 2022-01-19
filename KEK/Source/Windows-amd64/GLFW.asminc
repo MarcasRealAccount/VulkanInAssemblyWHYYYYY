@@ -9,7 +9,7 @@ extern glfwInit
 extern glfwTerminate
 extern glfwDefaultWindowHints
 extern glfwWindowHint        ; ecx => hint, edx => value
-extern glfwCreateWindow      ; ecx => width, edx => height, r8 => title
+extern glfwCreateWindow      ; ecx => width, edx => height, r8 => title, r9 => monitor, rsp + 20h => share
 extern glfwDestroyWindow     ; rcx => windowPtr
 extern glfwWindowShouldClose ; rcx => windowPtr
 extern glfwGetRequiredInstanceExtensions
