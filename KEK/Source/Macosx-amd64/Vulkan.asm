@@ -83,7 +83,7 @@ section .text
         mov dword[rcx + VkDebugUtilsMessengerCreateInfoEXT.sType], 1000128004
         mov qword[rcx + VkDebugUtilsMessengerCreateInfoEXT.pNext], 0
         mov dword[rcx + VkDebugUtilsMessengerCreateInfoEXT.flags], 0
-        mov dword[rcx + VkDebugUtilsMessengerCreateInfoEXT.messageSeverity], 1 | 16 | 256 | 4096
+        mov dword[rcx + VkDebugUtilsMessengerCreateInfoEXT.messageSeverity], 1h | 10h | 100h | 1000h
         mov dword[rcx + VkDebugUtilsMessengerCreateInfoEXT.messageType], 1 | 2 | 4
         lea rdx, [VulkanDebugCallback]
         mov qword[rcx + VkDebugUtilsMessengerCreateInfoEXT.pfnUserCallback], rdx
@@ -152,8 +152,11 @@ section .text
 
         mov dword[rsp + 30h + VkInstanceCreateInfo.sType], 1
 %if BUILD_IS_CONFIG_DEBUG
-        lea rcx, [rsp + 30h + VkInstanceCreateInfo_size + VkApplicationInfo_size]
-        mov qword[rsp + 30h + VkInstanceCreateInfo.pNext], rcx
+        ; lea rcx, [rsp + 30h + VkInstanceCreateInfo_size + VkApplicationInfo_size]
+        ; mov qword[rsp + 30h + VkInstanceCreateInfo.pNext], rcx
+        ; TODO(MarcasRealAccount): Currently the macosx vulkan icd loader fails when passing a correct debug utils messenger
+        ; so to mitigate it will be disabled.
+        mov qword[rsp + 30h + VkInstanceCreateInfo.pNext], 0
 %else
         mov qword[rsp + 30h + VkInstanceCreateInfo.pNext], 0
 %endif
@@ -172,7 +175,7 @@ section .text
         lea rdi, [rsp + 30h]
         mov rsi, 0
         lea rdx, [rbx + Vulkan.instance]
-        call _vkCreateInstanceTest
+        call _vkCreateInstance
 
 %if BUILD_IS_CONFIG_DEBUG
         mov [rsp + 18h], eax
@@ -201,6 +204,7 @@ section .text
 
         .exit:
             mov rsp, rbp
+            pop rbx
             pop rbp
             ret
 
@@ -218,7 +222,7 @@ section .text
         mov [rdi + Vulkan.applicationVersion], rax
         mov rax, [rsp + 10h]
         mov [rdi + Vulkan.engineVersion], rax
-        mov dword[rdi + Vulkan.apiVersion], 402000h
+        mov dword[rdi + Vulkan.apiVersion], 401000h
         lea rdi, [rdi + Vulkan.window]
         jmp _WindowCtor
 
@@ -229,12 +233,12 @@ section .text
 
         mov [rsp], rdi
 
-        mov qword[rdi + Vulkan.instance], 0
+        cmp qword[rdi + Vulkan.instance], 0
         je .skipDeinit
         call _VulkanDeinit
         .skipDeinit:
             mov rdi, [rsp]
-            mov rdi, [rdi + Vulkan.window]
+            lea rdi, [rdi + Vulkan.window]
             call _WindowDtor
         .exit:
             mov rsp, rbp
@@ -263,7 +267,9 @@ section .text
 
     GlobalLabel _VulkanDeinit ; rdi => Vulkan
         push rbp
+        push rbx
         mov rbp, rsp
+        sub rsp, 8h
 
         mov rbx, rdi
 
@@ -275,9 +281,11 @@ section .text
 %endif
 
         mov rdi, [rbx + Vulkan.instance]
+        mov rsi, 0
         call _vkDestroyInstance
 
         mov rsp, rbp
+        pop rbx
         pop rbp
         ret
 
@@ -286,7 +294,7 @@ section .text
         mov rax, [_VulkanCreateDebugUtilsMessengerEXTFunc]
         jmp rax
 
-    GlobalLabel _vkDestroyDebugUtilsMessengerEXT ; rdi => instance, rsi => pCreateInfo, rdx => pAllocator
+    GlobalLabel _vkDestroyDebugUtilsMessengerEXT ; rdi => instance, rsi => messenger, rdx => pAllocator
         mov rax, [_VulkanDestroyDebugUtilsMessengerEXTFunc]
         jmp rax
 %endif

@@ -70,7 +70,7 @@ section .text
         .loop:
             call _WindowsUpdate
 
-            lea rdi, [_AppWindow]
+            mov rdi, [_AppWindow]
             call _WindowShouldClose
             cmp rax, 0
             je .loop
@@ -85,6 +85,7 @@ section .text
         mov rsp, rbp
         pop rbx
         pop rbp
+        xor eax, eax
         ret
 
 %endif

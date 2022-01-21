@@ -34,7 +34,7 @@
 extern "C" VkResult vkCreateInstanceTest(const VkInstanceCreateInfo* pCreateInfo, [[maybe_unused]] const VkAllocationCallbacks* pAllocator, [[maybe_unused]] VkInstance* pInstance)
 {
 	[[maybe_unused]] const VkDebugUtilsMessengerCreateInfoEXT* pMsg = reinterpret_cast<const VkDebugUtilsMessengerCreateInfoEXT*>(pCreateInfo->pNext);
-	return VK_SUCCESS;
+	return vkCreateInstance(pCreateInfo, pAllocator, pInstance);
 }
 
 struct Window
