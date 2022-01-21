@@ -7,10 +7,10 @@ Please just tell me, why did I even start this??
 Enough of that.  
 
 # LOC timeline
-| Date | LOC MacOSX | LOC Windows |
-|-|-|-|
-| 17. January. 2022 | 0 | 900 |
-| 21. January. 2022 9:17 CET | 1024 | 890 |
+| Date | LOC Total | LOC MacOSX | LOC Windows |
+|-|-|-|-|
+| 17. January. 2022 | 900 | 0 | 900 |
+| 21. January. 2022 9:17 CET | 1874 | 1024 | 890 |
 
 # How to build
 ## Windows
